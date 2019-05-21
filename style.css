@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #f5f5f5;
+}
+
+.baymax {
+  border-bottom: 0.8em solid var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.baymax::before,
+.baymax::after {
+  background: var(--primary-color);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  top: -8em;
+  background: linear-gradient(to top, var(--primary-color), var(--primary-color) 50%, var(--secondary-color) 50%, var(--secondary-color));
+  background-size: 200% 200%;
+  animation: blink 5s infinite;
+}
+
+.baymax::before {
+	left: -9em;
+	transform: skewX(-4deg);
+}
+
+.baymax::after {
+  right: -9em;
+  transform: skewX(4deg);
+}
+
+@keyframes blink {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
