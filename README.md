@@ -6,3 +6,7 @@ Progress loader as baymax
 
 ## Screenshot
 ![Baymax loader screenshot](screenshot.gif)
+
+## Dribbble shot
+[Baymax loader](https://dribbble.com/shots/6516012-Baymax-Loader)
+
